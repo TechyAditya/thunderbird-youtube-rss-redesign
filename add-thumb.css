@@ -1,0 +1,33 @@
+.youtube {
+    position: relative; /* Needed to position the pseudo-element */
+    display: flex; 
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+    background: #27272a; /* or any other background color for the card content */
+    padding: 15px; 
+    margin: 16px; 
+    width: 400px; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.youtube:hover {
+    transform: scale(1.05); /* for interactive hover effect, if needed */
+}
+
+.youtube > * {
+    margin: 8px; /* adds space between children */
+}
+
+.yt_thumbnail {
+    width: 100%; /* or any desired width */
+    height: auto; /* auto height based on content */
+    transition: transform 0.2s ease-in-out; /* adds a smooth animation to the scaling */
+}
+
+* {
+    /* background-color: #27272a; */
+    color: #fbfbfe;
+}
