@@ -21,6 +21,12 @@ curl -sfLS {CHANNEL_URL}  | grep channelId | sed  -n 's/.*<meta itemprop="channe
 ```
 where `{CHANNEL_URL}` is the url for the channel you want to add in your feed.
 
+Alternatively, if the above instructions feel too much for you, follow below steps: 
+- Open YouTube channel's homepage
+- Right click -> View Source (Ctrl+U)
+- Ctrl+F (Find on page) -> find keyword "RSS"
+- Just next to ```title="RSS"``` field, there's ```href="..."``` link. That's RSS feed for that specific channel. Copy that and paste it in Thunderbird. 
+
 I think there are more convenient ways to do this without command line but I'm not aware of them personally (you can suggest them here if you want).
 
 ## Features
